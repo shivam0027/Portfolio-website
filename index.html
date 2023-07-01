@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/67f3081175.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h3>Personal-Portfolio</h3>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer </p>
+                <h1>
+                    Hi, I'm <span>Shivam</span> and <br>I'm a Web Developer
+                </h1>
+            </div>
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>hey!! I'm a passionate web Developer Seeking a challenging position to work in a technical
+                        organization where I could enhance my strength
+                        and skill with the organizations goals and achieve excellence through my fresher levels.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Projects</p>
+                        <p class="tab-links " onclick="opentab('education')">Education & Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UX-UI</span><br>Deigning Web/App Interfaces<br></li>
+                            <li><span>React</span><br>Using react to create Front-End<br></li>
+                            <li><span>Node.js</span><br>For Back-end Connectivity<br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Portfolio-Website</span><br>This is the portfiolio website i created<br></li>
+                            <li><span>Android Fitness app</span><br>Created a Fully working Fitness app which calculates
+                                steps and recommends wrokout plan<br></li>
+                            <li><span>Facial recognition attendance system</span><br>Created a fully working attendance
+                                system that used to mark attendence by checking and Matching the face of students<br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BTECH</span><br>(2019-2023) <br>Completed My Engineering in Computer Science
+                                <br>From GRAPHIC ERA HILL UNIVERSITY<br></li>
+                            <li><span>Full Stack Web Developer(UDEMY)</span><br>This course helped me to gain knowledge
+                                and hand on project experience in differnt domains including Front-End and Back-end<br>
+                            </li>
+                            <li><span>Mastering the fundamentals of JavaScript(SCALER)</span><br>This course included
+                                all the essentials components of JS like OOPS and Functional Programming<br></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- services section-->
+
+    <div id="services">
+
+        <div class="container">
+            <h1 class="sub-title">
+                My Services
+            </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer </h2>
+                    <p> A passionate full stack Developer </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <h2>Web Designer </h2>
+                    <p>Can create responsive and dynamic website deisgn for your next project</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h2>Dev ops </h2>
+                    <p>Full backend support with cloud deployment and management</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects / Portfolio -->
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Portfolio-Website</h3>
+                        <p>This is the portfiolio website i created
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Android Fitness app</h3>
+                        <p>Created a Fully working Fitness app which calculates steps and recommends wrokout plan
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Facial recognition attendance system</h3>
+                        <p>Created a fully working attendance system that used to mark attendence by checking and
+                            Matching the face of students
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="#" class="btn">See More</a>
+
+        </div>
+
+    </div>
+
+    <!-- CONTACT ME  -->
+
+    <div id="contact">
+        <div class="cotainer">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me </h1>
+                    <p> <i class="fa-solid fa-envelope"></i>shivamkhatri902@gmail.com.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>8126182952</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_shivam_khatri_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/Shivam_khatri_7" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/shivam0027" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shivam-khatri-73419a247/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Shivam's Resume.pdf" download class="btn btn2">Download Resume</a>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
